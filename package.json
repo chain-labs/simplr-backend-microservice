@@ -1,5 +1,5 @@
 {
-  "name": "backend-microservice",
+  "name": "simplr-backend-microservice",
   "version": "4.0.0",
   "description": "",
   "main": "app.js",
@@ -15,9 +15,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Khushboo1008/backend-microservice/issues"
+    "url": "https://github.com/chainlabs/simplr-backend-microservice/issues"
   },
-  "homepage": "https://github.com/Khushboo1008/backend-microservice#readme",
+  "homepage": "https://github.com/chainlabs/simplr-backend-microservice#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
