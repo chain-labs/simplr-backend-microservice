@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Khushboo1008/backend-microservice.git"
+    "url": "git+https://github.com/chainlabs/simplr-backend-microservice.git"
   },
   "author": "",
   "license": "ISC",
