@@ -16,5 +16,5 @@ mongoose
 app.use(cors());
 app.use(express.json());
 app.use("/signDoc", require("./routes/signDoc"));
-const PORT = 6000;
+const PORT = process.env.PORT || 6000;
 app.listen(PORT, () => console.log(`On Port ${PORT}`));
