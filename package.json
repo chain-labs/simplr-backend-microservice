@@ -1,0 +1,35 @@
+{
+  "name": "backend-microservice",
+  "version": "4.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khushboo1008/backend-microservice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Khushboo1008/backend-microservice/issues"
+  },
+  "homepage": "https://github.com/Khushboo1008/backend-microservice#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "env": "0.0.2",
+    "express": "^4.17.1",
+    "heroku": "^7.59.3",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.18",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
