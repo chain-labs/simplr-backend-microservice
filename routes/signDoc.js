@@ -3,7 +3,7 @@ const router = express.Router();
 const User = require("./../user");
 
 router.post("/", (req, res) => {
-	const { userId, signature } = req.body;
+	const { userId, signature, signer } = req.body;
 	User.findOne({ userId: userId }).then((user) => {
 		if (user) {
 			res.json({
@@ -14,6 +14,7 @@ router.post("/", (req, res) => {
 			const newUser = new User({
 				userId: userId,
 				signature: signature,
+				signer: signer
 			});
 			newUser
 				.save()
