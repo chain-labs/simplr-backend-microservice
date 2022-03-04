@@ -3,7 +3,7 @@ const router = express.Router();
 const User = require("./../user");
 
 router.post("/", (req, res) => {
-	const { userId, signature, signer } = req.body;
+	const { message, signature, signer } = req.body;
 	User.findOne({ userId: userId }).then((user) => {
 		if (user) {
 			res.json({
