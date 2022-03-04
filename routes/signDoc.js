@@ -4,15 +4,16 @@ const User = require("./../user");
 
 router.post("/", (req, res) => {
 	const { message, signature, signer } = req.body;
-	User.findOne({ userId: userId }).then((user) => {
+	User.findOne({ signer: signer }).then((user) => {
 		if (user) {
 			res.json({
 				status: "signature",
 				error: "User has already signed the terms and conditions",
 			});
-		} else {
+		} else 
+		{
 			const newUser = new User({
-				userId: userId,
+				message: message,
 				signature: signature,
 				signer: signer
 			});

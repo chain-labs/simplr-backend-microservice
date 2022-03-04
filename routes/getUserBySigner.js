@@ -4,6 +4,7 @@ const User = require("./../user");
 
 router.post("/", (req, res) => {
 	const { signer } = req.body;
+    
 	User.findOne({ signer: signer }).then((signer) => {
 		if (signer) {
 			res.json({
